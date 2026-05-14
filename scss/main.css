@@ -1,1 +1,169 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-image: url("../imgs/Arsenal logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+header nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  padding: 20px 0;
+}
+header nav .container .logo {
+  width: 130px;
+  height: 130px;
+}
+header nav .container .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header nav .container ul li {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header nav .container ul li:hover {
+  color: #DC052D;
+}
+header nav .container ul li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #DC052D;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+}
+header nav .container ul li:hover::after {
+  width: 100%;
+}
+header nav .container ul li:nth-of-type(2) {
+  text-decoration: underline;
+  color: #DC052D;
+}
+header nav .container ul .li-btn1:nth-of-type(1) {
+  background-color: transparent;
+  border: 2px solid #DC052D;
+  color: #DC052D;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header nav .container ul .li-btn1:nth-of-type(1):hover {
+  background-color: #DC052D;
+  color: #fff;
+}
+header nav .container ul .li-btn2 {
+  background-color: transparent;
+  border: 2px solid #0066B2;
+  color: #0066B2;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header nav .container ul .li-btn2:hover {
+  background-color: #0066B2;
+  color: #fff;
+}
+header .hero .container {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hero .container .hero_card1 {
+  width: 500px;
+}
+header .hero .container .hero_card1 h1 {
+  font-size: 75px;
+}
+header .hero .container .hero_card1 p {
+  padding: 30px 0px;
+}
+header .hero .container .hero_card1 .hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .hero .container .hero_card1 .hero-btns button:nth-of-type(1) {
+  background-color: transparent;
+  border: 2px solid #DC052D;
+  color: #DC052D;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .hero .container .hero_card1 .hero-btns button:nth-of-type(1):hover {
+  background-color: #DC052D;
+  color: #fff;
+}
+header .hero .container .hero_card1 .hero-btns button:nth-of-type(2) {
+  background-color: transparent;
+  border: 2px solid #0066B2;
+  color: #0066B2;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .hero .container .hero_card1 .hero-btns button:nth-of-type(2):hover {
+  background-color: #0066B2;
+  color: #fff;
+}
+header .hero .container .hero_card2 {
+  width: 100px;
+  text-align: center;
+}
+header .hero .container .hero_card2 ul {
+  line-height: 50px;
+}
+header .hero .container .hero_card2 ul li i {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DC052D;
+  color: #DC052D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+header .hero .container .hero_card2 ul li i:hover {
+  background-color: #DC052D;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
