@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#DC052D" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <title>Arsenal FC | Salohiddin</title>
     <link
       rel="stylesheet"
@@ -12,23 +17,26 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/roadmap.css" />
+    <link rel="stylesheet" href="scss/carousel.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="imgs/Arsenal_FC.svg" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
         <div class="container">
           <div class="logo">
             <img src="imgs/Arsenal_FC.svg" alt="Arsenal Logo" />
           </div>
           <ul class="nav-links">
-            <li>HOME</li>
-            <li>ABOUT THE CLUB</li>
-            <li>FAQ</li>
-            <li>NEWS</li>
-            <li>RULES</li>
-            <li>CONTACTS</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT THE CLUB</a></li>
+            <li><a href="#faq">Roadmap</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#rules">RULES</a></li>
+            <li><a href="#contacts">TEAM</a></li>
+            <li><a href="#trophy">TROPHIES</a></li>
             <li><button class="li-btn1">LOGIN</button></li>
             <li><button class="li-btn2">SIGN UP</button></li>
           </ul>
@@ -50,14 +58,16 @@
               Arsenal Fan Token.
             </p>
             <div class="hero-btns">
-              <button>BY TOKEN</button>
+              <a href="#token"><button>BY TOKEN</button></a>
               <button>REGISTER</button>
             </div>
           </div>
           <div class="hero_card2">
             <ul>
               <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-youtube"></i></li>
+              <a href="https://www.youtube.com/@arsenal"
+                ><li><i class="fa-brands fa-youtube"></i></li
+              ></a>
               <li><i class="fa-brands fa-facebook"></i></li>
               <li><i class="fa-brands fa-twitter"></i></li>
             </ul>
@@ -66,8 +76,377 @@
       </div>
     </header>
     <main>
-      <section class="intro">
-        <div class="container"></div>
+      <section class="intro" id="news">
+        <div class="container">
+          <section class="intro">
+            <div class="container">
+              <div class="intro_title">
+                <h1>Tokens purchased</h1>
+              </div>
+              <div class="intro_card">
+                <img src="./imgs/intro img.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="two" id="rules">
+        <div class="container">
+          <div class="two_title">
+            <h1>Economics</h1>
+          </div>
+          <div class="two_box">
+            <div class="two_card">
+              <img src="./imgs/two chart.png" alt="" />
+            </div>
+            <div class="two_card">
+              <h2>Bu Arsenalning o'yinlar soni va foizi</h2>
+              <p>
+                Arsenalning o'yinlar soni va foizi haqida ma'lumotlar taqdim
+                etilgan. Bu ma'lumotlar, Arsenalning o'yinlarda qanday
+                natijalarga erishganligini va o'yinlarda qanday
+                muvaffaqiyatlarga erishganligini ko'rsatadi. Arsenalning
+                o'yinlar soni va foizi, uning futbolchilarining va jamoasining
+                qanchalik samarali ishlashini ko'rsatadi.
+              </p>
+              <p>
+                Undagi ma'lumotlar, Arsenalning o'yinlarda qanday natijalarga
+                erishganligini va o'yinlarda qanday muvaffaqiyatlarga
+                erishganligini ko'rsatadi. Arsenalning o'yinlar soni va foizi,
+                uning futbolchilarining va jamoasining qanchalik samarali
+                ishlashini ko'rsatadi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="three" id="about">
+        <div class="container">
+          <div class="three_title">
+            <h1>About us</h1>
+          </div>
+          <div class="three_box">
+            <div class="three_card">
+              <h2>The ARSENAL Club,Creator of ARSENAL Token.</h2>
+              <p>
+                The ARSENAL Club is the official fan community of Arsenal
+                Football Club. We are dedicated to providing our fans with the
+                best possible experience and access to exclusive content,
+                events, and rewards.
+              </p>
+              <p>
+                As the creator of the ARSENAL Token, we are committed to
+                providing our fans with a unique and innovative way to engage
+                with the club and show their support. The ARSENAL Token is a
+                digital asset that allows fans to participate in club decisions,
+                access VIP experiences, and earn rewards for their loyalty.
+              </p>
+              <button class="threebtn">Change picture</button>
+            </div>
+            <div class="three_card">
+              <img class="img3" src="./imgs/Three img.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="four" id="token">
+        <div class="container">
+          <div class="four_title">
+            <h1>Token Contract</h1>
+          </div>
+          <form id="token-form">
+            <input
+              type="text"
+              name="contract"
+              placeholder="Enter token contract address"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <button>Send Info</button>
+            <p class="form-note">
+              After submission, your email client will open with the form data.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="fife" id="faq">
+        <div class="container">
+          <div class="fife_title">
+            <h2>Our strategy</h2>
+            <h1>Roadmap</h1>
+          </div>
+          <div class="roadmap">
+            <div class="roadmap-row">
+              <div class="roadmap-col">
+                <ul class="roadmap-list">
+                  <li>Innovating and Elevating Fan Engagement</li>
+                  <li>Community Achievements</li>
+                  <li>Token upgrade</li>
+                </ul>
+              </div>
+              <div class="roadmap-col roadmap-center">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-label">Q1 2024</span>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-label">Q2 2024</span>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-label">Q3 2024</span>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-label">Q4 2024</span>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-label">Q1 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="roadmap-col">
+                <ul class="roadmap-list">
+                  <li>Staking awards</li>
+                  <li>DEX Liquidity</li>
+                  <li>Listing on binance</li>
+                </ul>
+              </div>
+              <div class="roadmap-col">
+                <ul class="roadmap-list">
+                  <li>Foundation reserve</li>
+                  <li>Community promotion and incentives</li>
+                  <li>Security and ecosystem</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="roadmap-phases">
+              <div class="phase">
+                <h3>Phase 1</h3>
+                <ul>
+                  <li>Presales</li>
+                  <li>Marketing and creators</li>
+                  <li>Public sale and IDO</li>
+                </ul>
+              </div>
+              <div class="phase">
+                <h3>Phase 2</h3>
+                <ul>
+                  <li>Advisors and partners</li>
+                  <li>Team</li>
+                  <li>Private pools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="six">
+        <div class="container">
+          <div class="six_title">
+            <h1>TEAM</h1>
+          </div>
+
+          <div class="six_box" id="contacts">
+            <div class="six_card">
+              <img class="player" src="./imgs/RICE.avif" alt="" />
+              <div class="six_info">
+                <h2>Declan Rise</h2>
+                <p>Position: Middledefender</p>
+              </div>
+              <div class="six_num">
+                <h1>41</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/CALAFIORI.avif" alt="" />
+              <div class="six_info">
+                <h2>Calafiori</h2>
+                <p>Position: Defender</p>
+              </div>
+              <div class="six_num">
+                <h1>33</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/eze.avif" alt="" />
+              <div class="six_info">
+                <h2>Eze</h2>
+                <p>Position: Midfielder</p>
+              </div>
+              <div class="six_num">
+                <h1>10</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/SAKA.avif" alt="" />
+              <div class="six_info">
+                <h2>Bukayo Saka</h2>
+                <p>Position: Forward</p>
+              </div>
+              <div class="six_num">
+                <h1>7</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/SALIBA.avif" alt="" />
+              <div class="six_info">
+                <h2>Saliba</h2>
+                <p>Position: Defender</p>
+              </div>
+              <div class="six_num">
+                <h1>2</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/RAYA.avif" alt="" />
+              <div class="six_info">
+                <h2>David Raya</h2>
+                <p>Position: Goalkeeper</p>
+              </div>
+              <div class="six_num">
+                <h1>1</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/GYOKERES.avif" alt="" />
+              <div class="six_info">
+                <h2>Victor Gyokeres</h2>
+                <p>Position: Forward</p>
+              </div>
+              <div class="six_num">
+                <h1>14</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/JESUS.avif" alt="" />
+              <div class="six_info">
+                <h2>Gabriel Jesus</h2>
+                <p>Position: Forward</p>
+              </div>
+              <div class="six_num">
+                <h1>9</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/TROSSARD.avif" alt="" />
+              <div class="six_info">
+                <h2>Leandro Trossard</h2>
+                <p>Position: Forward</p>
+              </div>
+              <div class="six_num">
+                <h1>19</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/MAGALHAES.avif" alt="" />
+              <div class="six_info">
+                <h2>Gabriel Magalhães</h2>
+                <p>Position: Defender</p>
+              </div>
+              <div class="six_num">
+                <h1>6</h1>
+              </div>
+            </div>
+            <div class="six_card">
+              <img class="player" src="./imgs/MARTINELL.avif" alt="" />
+              <div class="six_info">
+                <h2>Gabriel Martinelli</h2>
+                <p>Position: Forward</p>
+              </div>
+              <div class="six_num">
+                <h1>11</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-indicator active" data-index="0"></button>
+            <button class="carousel-indicator" data-index="1"></button>
+            <button class="carousel-indicator" data-index="2"></button>
+            <button class="carousel-indicator" data-index="3"></button>
+            <button class="carousel-indicator" data-index="4"></button>
+            <button class="carousel-indicator" data-index="5"></button>
+            <button class="carousel-indicator" data-index="6"></button>
+            <button class="carousel-indicator" data-index="7"></button>
+            <button class="carousel-indicator" data-index="8"></button>
+            <button class="carousel-indicator" data-index="9"></button>
+            <button class="carousel-indicator" data-index="10"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="seven">
+        <div class="container">
+          <div class="seven_title">
+            <h1>Trophies</h1>
+          </div>
+          <div class="seven_box" id="trophy">
+            <div class="seven_card">
+              <img class="trophy" src="./imgs/Seven img1.jpeg" alt="" />
+              <div class="seven_info">
+                <h2>Premier League</h2>
+                <h1>13</h1>
+              </div>
+            </div>
+            <div class="seven_card">
+              <img class="trophy" src="./imgs/Seven img2.jpg" alt="" />
+              <div class="seven_info">
+                <h2>FA cup</h2>
+                <h1>14</h1>
+              </div>
+            </div>
+            <div class="seven_card">
+              <img class="trophy" src="./imgs/Seven img4.jpeg" alt="" />
+              <div class="seven_info">
+                <h2>Community Shield</h2>
+                <h1>17</h1>
+              </div>
+            </div>
+            <div class="seven_card">
+              <img class="trophy" src="./imgs/Seven img5.jpg" alt="" />
+              <div class="seven_info">
+                <h2>UEFA Cup Winners’ Cup</h2>
+                <h1>1</h1>
+              </div>
+            </div>
+            <div class="seven_card">
+              <img class="trophy" src="./imgs/Seven img6.jpg" alt="" />
+              <div class="seven_info">
+                <h2>Inter-Cities Fairs Cup</h2>
+                <h1>1</h1>
+              </div>
+            </div>
+            <div class="seven_card">
+              <img class="trophy" src="./imgs/Seven img7.webp" alt="" />
+              <div class="seven_info">
+                <h2>UEFA Super Cup</h2>
+                <h1>1</h1>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls seven-controls">
+            <button class="carousel-indicator" data-index="0"></button>
+            <button class="carousel-indicator" data-index="1"></button>
+            <button class="carousel-indicator" data-index="2"></button>
+            <button class="carousel-indicator" data-index="3"></button>
+            <button class="carousel-indicator" data-index="4"></button>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

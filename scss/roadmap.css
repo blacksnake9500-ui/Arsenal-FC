@@ -1,0 +1,95 @@
+.fife .container .roadmap {
+  margin-top: 50px;
+}
+.fife .container .roadmap .roadmap-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.fife .container .roadmap .roadmap-row .roadmap-col {
+  flex: 1;
+}
+.fife .container .roadmap .roadmap-row .roadmap-col .roadmap-list {
+  list-style: none;
+  padding: 20px;
+  border-left: 2px solid #DC052D;
+}
+.fife .container .roadmap .roadmap-row .roadmap-col .roadmap-list li {
+  padding: 10px 0;
+  color: #DC052D;
+  font-size: 14px;
+}
+.fife .container .roadmap .roadmap-row .roadmap-center {
+  flex: 2;
+  border-left: none !important;
+}
+.fife .container .roadmap .roadmap-row .roadmap-center .timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 150px;
+}
+.fife .container .roadmap .roadmap-row .roadmap-center .timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #DC052D, transparent);
+  transform: translateY(-50%);
+}
+.fife .container .roadmap .roadmap-row .roadmap-center .timeline .timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.fife .container .roadmap .roadmap-row .roadmap-center .timeline .timeline-item .timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #DC052D;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(220, 5, 45, 0.6);
+}
+.fife .container .roadmap .roadmap-row .roadmap-center .timeline .timeline-item .timeline-label {
+  color: #DC052D;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.fife .container .roadmap .roadmap-phases {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+}
+.fife .container .roadmap .roadmap-phases .phase {
+  flex: 1;
+  padding: 30px;
+  border: 2px solid #DC052D;
+  border-radius: 10px;
+}
+.fife .container .roadmap .roadmap-phases .phase h3 {
+  color: #DC052D;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.fife .container .roadmap .roadmap-phases .phase ul {
+  list-style: none;
+}
+.fife .container .roadmap .roadmap-phases .phase ul li {
+  padding: 8px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+.fife .container .roadmap .roadmap-phases .phase ul li:before {
+  content: "• ";
+  color: #DC052D;
+  margin-right: 8px;
+}
