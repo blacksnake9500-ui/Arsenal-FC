@@ -26,19 +26,36 @@
     <header id="home">
       <nav>
         <div class="container">
-          <div class="logo">
-            <img src="imgs/Arsenal_FC.svg" alt="Arsenal Logo" />
-          </div>
+          <a
+            href="https://www.google.com/search?q=ARSENAL+FC&oq=ARSENAL+FC&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIRCAEQIxgnGEYY-wEYgAQYigUyDAgCECMYJxjwBRieBjIHCAMQLhiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTU0NThqMGoxNagCCLACAfEFfsjpwNwP4rg&sourceid=chrome&ie=UTF-8"
+            ><div class="logo">
+              <img src="imgs/Arsenal_FC.svg" alt="Arsenal Logo" /></div
+          ></a>
           <ul class="nav-links">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT THE CLUB</a></li>
-            <li><a href="#faq">Roadmap</a></li>
+            <li><a href="#faq">ROADMAP</a></li>
             <li><a href="#news">NEWS</a></li>
             <li><a href="#rules">RULES</a></li>
             <li><a href="#contacts">TEAM</a></li>
             <li><a href="#trophy">TROPHIES</a></li>
-            <li><button class="li-btn1">LOGIN</button></li>
-            <li><button class="li-btn2">SIGN UP</button></li>
+
+            <li>
+              <div
+                id="g_id_onload"
+                data-client_id="431383664256-81m17ves25e5h5ccj0btln1d7pm50s75.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse"
+              ></div>
+
+              <div
+                class="g_id_signin"
+                data-type="standard"
+                data-size="medium"
+                data-theme="outline"
+                data-text="sign_in_with"
+                data-shape="pill"
+              ></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -450,12 +467,37 @@
       </section>
     </main>
     <footer>
-      <div class="container"></div>
+      <div class="container">
+        <div class="marquee">
+          <div class="marquee-track">
+            <span>Home</span>
+            <span>News</span>
+            <span>Economics</span>
+            <span>About</span>
+            <span>Token</span>
+            <span>Road map</span>
+            <span>Team</span>
+            <span>Trophy</span>
+            <span>Home</span>
+            <span>News</span>
+            <span>Economics</span>
+            <span>About</span>
+            <span>Token</span>
+            <span>Road map</span>
+            <span>Team</span>
+            <span>Trophy</span>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
   <script src="main.js"></script>
   <script>
-    AOS.init();
+    function handleCredentialResponse(response) {
+      console.log("Google Token:", response.credential);
+
+      alert("Google login ishladi!");
+    }
   </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </html>

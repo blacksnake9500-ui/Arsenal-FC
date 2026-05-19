@@ -574,6 +574,7 @@ header {
                 position: relative;
                 overflow-y: hidden;
                 cursor: pointer;
+
                 &:hover .seven_info {
                     transform: translateY(0px);
                 }
@@ -591,12 +592,60 @@ header {
                     bottom: 0px;
                     transition: all .3s ease;
                     transform: translateY(400px);
-                    h1{
+
+                    h1 {
                         color: yellow;
                         font-size: 40px;
                     }
                 }
             }
         }
+    }
+}
+
+footer {
+    .container {
+        padding: 20px 0px;
+        text-align: center;
+        overflow: hidden;
+
+        .marquee {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .marquee-track {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+            white-space: nowrap;
+            animation: marquee-scroll 15s linear infinite;
+            font-size: 24px;
+        }
+
+        .marquee-track span {
+            display: inline-block;
+            color: #fff;
+            opacity: 0.9;
+            letter-spacing: 0.1em;
+            padding-right: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: #DC052D;
+            }
+        }
+    }
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
     }
 }
