@@ -501,4 +501,44 @@ header .hero .container .hero_card2 ul li i:hover {
 .seven .container .seven_box .seven_card .seven_info h1 {
   color: yellow;
   font-size: 40px;
+}
+
+footer .container {
+  padding: 20px 0px;
+  text-align: center;
+  overflow: hidden;
+}
+footer .container .marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+footer .container .marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  white-space: nowrap;
+  animation: marquee-scroll 15s linear infinite;
+  font-size: 24px;
+}
+footer .container .marquee-track span {
+  display: inline-block;
+  color: #fff;
+  opacity: 0.9;
+  letter-spacing: 0.1em;
+  padding-right: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+footer .container .marquee-track span:hover {
+  color: #DC052D;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=main.css.map */
